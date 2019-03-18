@@ -1,0 +1,46 @@
+.sheet-select
+	$block-padding: 40px
+	border-radius: 20px 20px 0 0
+	transition-property: transform, height
+	&.raised
+		height: 405px
+	.block
+		padding-left: $block-padding
+		padding-right: $block-padding
+		#upload
+				display: none
+	.select
+		&-tabs
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-around
+			margin: $block-padding 0
+			
+		&-link
+			padding: 20px
+			background-repeat: no-repeat
+			background-size: 100%
+			&.up
+				background-image: url('../img/icons/up.svg')
+			&.inst
+				background-image: url('../img/icons/inst.svg')
+				&.active
+					background-image: url('../img/icons/inst_active.svg')
+			&.fb
+				background-image: url('../img/icons/fb.svg')
+				&.active
+					background-image: url('../img/icons/fb_active.svg')
+		&-content
+			margin-bottom: 20px
+			&::before
+				content: ''
+				display: block
+				margin: 0 #{-$block-padding} $block-padding #{-$block-padding}
+				border-bottom: 1px dashed $secondary
+			button
+				border-radius: 25px
+		&-source
+			display: none
+			&.active
+				display: block

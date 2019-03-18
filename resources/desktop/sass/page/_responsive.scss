@@ -1,0 +1,19 @@
+@media screen and (max-height: 901px){
+	header {
+		padding-top: 2rem !important;
+	}
+	.gridly .tile {
+		width: 6rem;
+		height: 6rem;
+	}
+}
+
+@media screen and (max-height: 640px) {
+	.upload {
+		margin-top: 3rem !important;
+	}
+	.gridly .tile {
+		width: 4rem;
+		height: 4rem;
+	}
+}

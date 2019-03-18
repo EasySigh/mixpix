@@ -1,0 +1,64 @@
+// Colors
+$primary: #264ca3;
+$secondary: #b1b1b1;
+$info: #d12798;
+$success: #3bcf76;
+// Colors exactly for text:
+$muted: #6c6c6c; // #acacac
+$dark: #323232;
+$gray: #868686; // #707070 , #888
+$dark-gray: #5d5d5d;
+
+
+// Fonts
+$font-regular: Regular, sans-serif;
+$font-medium: Medium, sans-serif;
+$font-demibold: Demi-Bold, sans-serif;
+$font-bold: Bold, sans-serif;
+
+// Sizes
+$headerHeight: 57px;
+
+
+// Maps
+$headings: (
+	h1: 26px,
+	h2: 22px,
+	h3: 20px,
+	h4: 18px,
+	h5: 14px
+);
+
+$colors:(
+	white:		#ffffff,
+	primary: 	#264ca3,
+	secondary: 	#b1b1b1,
+	success: 	#3bcf76,
+	info: 		#d12798,
+	muted: 		#6c6c6c,
+	dark: 		#323232,
+	gray: 		#868686
+);
+
+$sides: (
+	top: t,
+	right: r,
+	bottom: b,
+	left: l,
+	vertical: y,
+	horizontal: x
+);
+
+$sizes: (
+	25: 25%,
+	50: 50%,
+	75: 75%,
+	100: 100%
+);
+
+$element-colors:(
+	primary: 	#264ca3,
+	secondary: 	#b1b1b1,
+	success: 	#3bcf76,
+	info: 		#d12798
+);

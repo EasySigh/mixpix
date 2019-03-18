@@ -1,0 +1,27 @@
+.btn
+	display: inline-block
+	padding: 15px 30px
+	font-size: 14px
+	font-family: $font-demibold
+	transition: all .3s
+	border: 1px solid transparent
+	border-radius: 6px
+	user-select: none
+	&:not(a)
+		-webkit-appearance: button
+		outline: none
+
+a.btn
+	text-align: center
+	border: none
+	text-decoration: none
+
+
+@each $theme, $color in $element-colors
+	.btn-#{$theme}
+		border-color: $color
+		background-color: $color
+		color: #fff
+		&:active
+			border-color: darken($color, 15%)
+			background-color: darken($color, 15%)

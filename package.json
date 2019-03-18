@@ -1,0 +1,43 @@
+{
+  "name": "mixpix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "buildm": "webpack --mode production --config mob.webpack.config.js",
+    "dev": "webpack-dev-server --watch --mode development",
+    "watchm": "webpack --watch --mode development --config mob.webpack.config.js"
+  },
+  "author": "Proxima developer",
+  "license": "ISC",
+  "dependencies": {
+    "@uppy/core": "^0.29.1",
+    "@uppy/dashboard": "^0.29.1",
+    "@uppy/instagram": "^0.29.1",
+    "@uppy/tus": "^0.29.1",
+    "@uppy/xhr-upload": "^0.29.1",
+    "bootstrap": "^4.2.1",
+    "framework7": "^4.0.0",
+    "framework7-icons": "^2.2.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6",
+    "uppy": "^0.29.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "less": "^3.0.0",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

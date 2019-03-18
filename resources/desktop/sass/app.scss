@@ -1,0 +1,9 @@
+// Bootstrap
+@import '~bootstrap/scss/functions', '~bootstrap/scss/variables';
+@import "variables";
+@import '~bootstrap/scss/bootstrap';
+
+// Uppy
+@import "variables_uppy";
+@import "~@uppy/core/src/style";
+@import "~@uppy/dashboard/src/style";

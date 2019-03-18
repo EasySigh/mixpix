@@ -1,0 +1,27 @@
+.main-title
+	position: absolute
+	text-align: center
+	top: 30px
+	left: 0
+	right: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	span
+		font-size: 16px
+	.logo
+		z-index: 2
+		margin-bottom: 0
+		line-height: 14px
+		text-transform: uppercase
+		letter-spacing: 2px
+		+logo(7px)
+	.checkout-link
+		z-index: 2
+		position: absolute
+		right: 20px
+		background-image: url('../img/icons/checkout.svg')
+		background-repeat: no-repeat
+		padding: 8px 9px
+		&.active
+			background-image: url('../img/icons/checkout-active.svg')

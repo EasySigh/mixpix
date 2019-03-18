@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.011" height="35.011" viewBox="0 0 35.011 35.011">
+    <defs>
+        <style>
+            .cls-1{fill:#b1b1b1}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_159" data-name="Group 159" transform="translate(-60 -59.999)">
+        <rect id="Blue" width="35.011" height="35.011" class="cls-1" rx="3" transform="translate(60 59.999)"/>
+        <path id="f" d="M223.468 147.116v-13.558h4.551l.681-5.284h-5.232V124.9c0-1.53.425-2.572 2.619-2.572h2.8V117.6a37.442 37.442 0 0 0-4.077-.208c-4.034 0-6.8 2.462-6.8 6.984v3.9h-4.563v5.284h4.563v13.558z" class="cls-2" transform="translate(-139.311 -52.106)"/>
+    </g>
+</svg>

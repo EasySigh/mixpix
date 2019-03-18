@@ -1,0 +1,17 @@
+=font-face($font-family, $file-path, $font-weight, $font-style)
+  @font-face
+    font-family: $font-family
+    src: url('#{$file-path}.eot')
+    src: url('#{$file-path}.woff')format('woff'), url('#{$file-path}.ttf') format('truetype'), url('#{$file-path}.svg#$font-famil') format('svg')
+    font-weight: $font-weight
+    font-style: $font-style
+
+//Add fonts
++font-face("Avenir","../fonts/Avenir", 400, normal)
++font-face("Avenir-Bold","../fonts/Avenir-Bold", 600, normal)
+
+//Create classes
+.regular
+  font-family: $font-regular
+.bold
+  font-family: $font-bold

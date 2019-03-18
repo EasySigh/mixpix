@@ -1,0 +1,92 @@
+.select
+	z-index: 2
+	display: none
+	align-items: center
+	position: relative
+	&-block, .image-block
+		background-color: white
+		border-radius: .6rem
+	// Block with uploaded picture
+	.image-block
+		height: 280px
+		width: 280px
+		min-width: 280px
+		background-image: url('./../img/icons/add_pic.png')
+		background-position: center center
+		background-repeat: no-repeat
+	// Select upload method Block. 
+	&-block
+		display: flex
+		flex-direction: column
+		position: relative
+		margin-left: 3rem
+		width: 390px
+		font-size: 14px
+		&::before
+			+triangle('', white, left, 1.5rem, 1.5rem)
+			position: absolute
+			left: -3rem
+			top: 50%
+			transform: translateY(-50%)
+		.select-body
+			padding: 2rem
+			.nav-tabs
+				margin-top: 4rem
+				margin-bottom: 2rem
+				border-bottom: none
+				a
+					padding: 20px
+					background-color: transparent
+					background-repeat: no-repeat
+					background-size: 100%
+					background-position: center
+				.upload_tab
+					background-image: url('./../img/icons/up.svg')
+					&.active
+						background-image: url('./../img/icons/up_active.svg')
+				.inst_tab
+					background-image: url('./../img/icons/inst.svg')
+					&.active
+						background-image: url('./../img/icons/inst_active.svg')
+				.fb_tab
+					background-image: url('./../img/icons/fb.svg')
+					&.active
+						background-image: url('./../img/icons/fb_active.svg')
+		.select-footer
+			flex: 0 0 30%
+			max-height: 30%
+			padding: 2rem
+			margin-top: auto
+			border-top: 1px dashed #d6d6d6
+			button
+				img
+					width: 26px
+					height: 30px
+			.tab-pane
+				position: relative
+				.upload-input
+					opacity: 0
+					position: absolute
+					top: 0
+					bottom: 0
+					left: 0
+					width: 100%
+			#dragDrop
+				margin: -2rem
+				.uppy-Dashboard-inner
+					min-height: unset
+					min-width: unset
+					width: unset !important
+				.uppy-DashboarAddFiles
+					position: relative
+					&::before
+						content: ''
+						display: block
+						padding: 40px
+						padding-top: 10px
+						background: transparent url('./../img/icons/drag_drop.svg') no-repeat center 100%
+				.uppy-Dashboard-dropFilesTitle
+					color: #c6c6c6
+					button
+						color: #000
+						text-decoration: underline

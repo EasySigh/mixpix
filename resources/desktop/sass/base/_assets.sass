@@ -1,0 +1,41 @@
+@media print
+	.no-print, .no-print *
+		display: none
+
+.text-link
+  display: inline
+  padding: 0
+  text-decoration: none
+
+.nowrap
+  white-space: nowrap
+
+.lh-1
+  line-height: 1
+
+.pointer
+  cursor: pointer
+
+@each $screen, $proportion in $grid-breakpoints
+  // Don't generate anything for 'xs' size.
+  @if($screen == 'xs')
+    null
+  @else
+    @media (min-width: #{$proportion})
+    	@each $size, $width in $sizes
+        .w-#{$screen}-#{$size}
+          width: $width !important
+
+
+=triangle($size: 20px, $color: red, $direction: 'top', $spec-width: ($size / 2), $spec-length: $size)
+  @if($direction == top)
+    $direction: bottom
+  @else if($direction == bottom)
+    $direction: top
+  @else if($direction == left)
+    $direction: right
+  @else if($direction == right)
+    $direction: left
+  content: ''
+  border: $spec-width solid transparent
+  border-#{$direction}: $spec-length solid $color

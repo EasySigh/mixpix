@@ -1,0 +1,50 @@
+.tab
+	&-header
+		display: flex
+		align-items: center
+		position: relative
+		margin-bottom: 40px
+		.logo
+			line-height: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+			margin-bottom: 0
+			+logo(7px)
+			+mx-auto
+			span
+				font-size: 16px
+		.back-link
+			position: absolute
+			left: -12px
+			top: -10px
+	&.inner-tab
+		box-sizing: border-box
+		padding: 30px 35px
+	.content-block
+		display: flex
+		flex-direction: column
+	// Table with prices
+	.costs
+		font-size: 14px
+		color: $gray
+		text-align: left
+		border-collapse: collapse
+		th:last-child, td:last-child
+			text-align: right
+		tbody
+			font-size: 18px
+			font-family: $font-bold
+			color: #000
+			td
+				padding-top: 10px
+				margin-top: 10px
+				border-top: 1px solid $gray
+		thead
+			th
+				padding-bottom: 10px
+	// Next tab btn
+	.continue-btn
+		margin-top: 28px
+.unscrollable-tab
+	.content-block
+		height: calc(100% - #{$headerHeight})

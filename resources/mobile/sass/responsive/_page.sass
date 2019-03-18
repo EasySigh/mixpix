@@ -1,0 +1,43 @@
+@media (min-height: 569px)
+	.page.home-page
+		background-size: 100% 150%
+		background-position: center 90%
+		.page-content
+			padding-top: 20px + $headerHeight
+			article::after
+				height: 70px
+		.upload_block
+			margin-top: 20px
+		#upload_link, .tile
+			width: 115px
+			height: 115px
+			flex-basis: 115px
+
+@media (min-height: 667px)
+	.tab .page.home-page
+		background-size: 100% 150%
+		background-position: center 90%
+		.page-content
+			padding-top: 40px + $headerHeight
+			article::after
+				height: 70px
+				right: 80px
+		.upload_block
+			margin-top: 40px
+
+@media (min-height: 736px)
+	#app .tab .page.home-page
+		background-size: 100% 120%
+		background-position: center 95%
+		.page-content
+			padding-top: 90px + $headerHeight
+			article::after
+				right: 60px
+				height: 110px
+				width: 46px
+		.upload_block
+			margin-top: 50px
+		#upload_link, .tile
+			width: 135px
+			height: 135px
+			flex-basis: 135px
